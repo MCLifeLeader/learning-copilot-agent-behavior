@@ -25,19 +25,13 @@ These instructions define how GitHub Copilot should assist with this project. Th
 Use this structure as a guide when creating or updating files:
 
 ```text
+Docs/
 src/
-  Api/
-  Aspire/
-  Azure/
-  Blazor/
-  Console/
-  Startup.business/
-  Startup.Client/
-  Startup.Common/
-  Startup.Data/
-  Startup.Tests/
-  StartupExample/
-  Web/
+  MyChatApp.ApiService/
+  MyChatApp.AppHost/
+  MyChatApp.ServiceDefaults/
+  MyChatApp.Tests/
+  MyChatApp.Web/
 ```
 
 ## 🧶 Patterns
@@ -75,7 +69,7 @@ src/
 
 ## Running tests
 
-(1) Build from the root with `dotnet build Ai.Coach.sln`.
+(1) Build from the root with `dotnet build MyChatApp.sln`.
 (2) If that produces errors, fix those errors and build again. Repeat until the build is successful.
 (3) Run tests with `dotnet test **/*.tests.csproj`.
 
