@@ -145,8 +145,7 @@ winget install GitHub.GitHubDesktop
 
 ### Primarily used for Git Merge Conflicts, compares files and folders
 
-👍 Recommended 👍 <br />
-⭐ License Required ⭐
+👍 Recommended 👍
 
 When performing merging of branches, the BeyondCompare tool has been fantastic. This tool also supports comparisons between folders making it easier to perform diffs between two large directory structures. This tool also integrates well with Atlassian Source Tree.
 
@@ -186,7 +185,7 @@ winget install Microsoft.SQLServer.2022.Express
 
 ### IDE and Text Editors
 
-✅ Required Resource ✅
+👍 Recommended 👍
 
 Our primary development must use Visual Studio and / or Visual Studio Code
 
@@ -205,21 +204,9 @@ winget install Microsoft.SQLServerManagementStudio
 winget install Notepad++.Notepad++
 ```
 
-### Entity Framework and Database tools
-
-⭐ License Required ⭐
-
-Only request this tool if there is a use case that is needed.
-This tool makes querying databases very nice. It provides support for LINQ or direct queries. You can also validate / verify queries using LINQ within this editor making testing easier when developing Entity Framework calls to the database.
-
-```
-winget install LINQPad.LINQPad.7
-```
-
 ### VS 2022 Addon Tools Extensions
 
-👍 Recommended 👍 <br />
-⭐ License Required ⭐
+👍 Recommended 👍
 
 Highly recommended. This tool should be used periodically for its refactor and C# linting fix up capabilities for C# code.
 
@@ -232,8 +219,7 @@ winget install JetBrains.ReSharper
 
 ### Docker / Container Services
 
-👍 Recommended 👍 <br />
-⭐ License Required ⭐
+👍 Recommended 👍
 
 This resource provides local development tools and resources will speed up developer setup and configuration and provide diagnostic and debugging resources not previously available. The number of options and tools is near limitless.
 
@@ -248,8 +234,6 @@ winget install Docker.DockerDesktop
 It is recommended to periodically run the dotnet workload update command, as this will help keep your local development tools and resources up to date. Running Visual Studio updates do not always update all of the dotnet resources.
 If you desire experimenting with Aspire resources it is recommended to install the wasm-tools and aspire workloads.
 Lastly, the LibraryManager provides resources for using libman.json configuration files to automatically download web resources such as jQuery, Bootstrap, and other libraries for web development.
-
-⚠️ .NET Aspire, approval is pending Architecture review ⚠️
 
 ```
 dotnet workload update
@@ -274,7 +258,6 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
 ### DevContainers
 
 👍 Recommended 👍 <br />
-⚠️ Provisional Approval ⚠️ <br />
 
 A DevContainer is a development environment defined by a Docker container, which includes all necessary tools, libraries, and dependencies for a project. It ensures a consistent development setup across different machines, simplifies onboarding, and enhances productivity by providing a pre-configured environment that mirrors production settings. DevContainers are commonly used with Visual Studio Code to streamline development workflows and improve collaboration.
 
@@ -282,11 +265,8 @@ A DevContainer is a development environment defined by a Docker container, which
 
 ⚠️ Helpful resources ⚠️ <br />
 
-The following Docker Images and Container resources are provisionally approved for local development environment use ONLY. These images and resources may *not* at any time be deployed outside of your local development environment. They are to be used as tools, utilities, and resources at the local development level only.
-
 Container Images
 
-- datalust/seq
 - docker.io/library/redis
 - ghcr.io/azure/azure-dev/azd
 - ghcr.io/devcontainers/features/common-utils
@@ -297,12 +277,8 @@ Container Images
 - ghcr.io/devcontainers/features/github-cli
 - ghcr.io/devcontainers/features/powershell
 - ghcr.io/devcontainers/features/node
-- mailhog/mailhog
 - mcr.microsoft.com/azure-storage/azurite
-- mcr.microsoft.com/azure-messaging/servicebus-emulator
-- mcr.microsoft.com/azure-messaging/eventhubs-emulator
 - mcr.microsoft.com/devcontainers/dotnet:1-9.0
 - mcr.microsoft.com/dotnet/sdk
 - mcr.microsoft.com/dotnet/aspnet
 - mcr.microsoft.com/mssql/server
-- wiremock/wiremock
