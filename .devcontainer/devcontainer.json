@@ -96,31 +96,23 @@
   "postCreateCommand": "sudo pwsh -File ./post_devcontainer.ps1",
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  "forwardPorts": [27080, 8541, 8206, 8100, 8110, 8120],
+  "forwardPorts": [17056, 7319, 7296, 59442],
 
   "portsAttributes": {
-    "27080": {
-      "label": "Docker-Aspire_Dash-https",
+    "17056": {
+      "label": "Aspire_Dash-https",
       "protocol": "https"
     },
-    "8541": {
-      "label": "Docker-Aspire.Api-https",
+    "7319": {
+      "label": "Aspire.Api-https",
       "protocol": "https"
     },
-    "8206": {
-      "label": "Docker-Aspire.BlazorApp-https",
+    "7296": {
+      "label": "Aspire.BlazorApp-https",
       "protocol": "https"
     },
-    "8100": {
-      "label": "Docker-Startup.Api-https",
-      "protocol": "https"
-    },
-    "8110": {
-      "label": "Docker-Startup.BlazorApp-https",
-      "protocol": "https"
-    },
-    "8120": {
-      "label": "Docker-Startup.BlazorApp-https",
+    "59442": {
+      "label": "Redis",
       "protocol": "https"
     }
   },

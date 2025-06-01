@@ -41,6 +41,7 @@ src/
 - Use Clean Architecture with layered separation.
 - Use Dependency Injection for services and repositories.
 - Use FluentValidation for input validation.
+- Create razor pages with backend resources in Blazor separating HTML, CSS, and C# logic.
 - Map DTOs to domain models using manual mapping extension classes and methods.
 - Use ILogger<T> for structured logging.
 - For APIs:
