@@ -5,9 +5,6 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-
 jobs:
   create_issues:
     runs-on: ubuntu-latest
