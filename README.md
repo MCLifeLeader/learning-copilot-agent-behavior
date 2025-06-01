@@ -8,8 +8,7 @@ You can find my ePortfolio [here](https://github.com/MCLifeLeader/ePortfolio).
 
 ## Additional Resources
 
-Note: Lead developer should maintain this and all files in the repository.
-
+[Project Documentation](Docs/README.md) <br />
 [Authors](AUTHORS.md) <br />
 [ChangeLog](CHANGELOG.md) <br />
 [Contributing](CONTRIBUTING.md)
