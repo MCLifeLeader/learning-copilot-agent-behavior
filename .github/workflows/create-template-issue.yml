@@ -23,3 +23,4 @@ jobs:
             - [ ] Update repository description and topics.
             - [ ] Add a license if needed.
             - [ ] Invite collaborators.
+          search-existing: all
