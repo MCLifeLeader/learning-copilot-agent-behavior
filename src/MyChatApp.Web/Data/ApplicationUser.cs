@@ -6,5 +6,4 @@ namespace MyChatApp.Web.Data
     public class ApplicationUser : IdentityUser
     {
     }
-
 }

@@ -12,6 +12,7 @@ else
 }
 
 @code {
+
     [CascadingParameter]
     private HttpContext? HttpContext { get; set; }
 
@@ -25,4 +26,5 @@ else
             NavigationManager.Refresh(forceReload: true);
         }
     }
+
 }
