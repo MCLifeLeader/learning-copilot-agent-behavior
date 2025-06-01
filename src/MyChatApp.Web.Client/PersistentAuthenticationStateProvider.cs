@@ -14,10 +14,10 @@ namespace MyChatApp.Web.Client
     // cookie that will be included on HttpClient requests to the server.
     internal class PersistentAuthenticationStateProvider : AuthenticationStateProvider
     {
-        private static readonly Task<AuthenticationState> defaultUnauthenticatedTask =
+        private static readonly Task<AuthenticationState> _defaultUnauthenticatedTask =
             Task.FromResult(new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity())));
 
-        private readonly Task<AuthenticationState> authenticationStateTask = defaultUnauthenticatedTask;
+        private readonly Task<AuthenticationState> _authenticationStateTask = _defaultUnauthenticatedTask;
 
         public PersistentAuthenticationStateProvider(PersistentComponentState state)
         {
@@ -26,16 +26,18 @@ namespace MyChatApp.Web.Client
                 return;
             }
 
-            Claim[] claims = [
+            Claim[] claims =
+            [
                 new Claim(ClaimTypes.NameIdentifier, userInfo.UserId),
                 new Claim(ClaimTypes.Name, userInfo.Email),
-                new Claim(ClaimTypes.Email, userInfo.Email) ];
+                new Claim(ClaimTypes.Email, userInfo.Email)
+            ];
 
-            authenticationStateTask = Task.FromResult(
+            _authenticationStateTask = Task.FromResult(
                 new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity(claims,
                     authenticationType: nameof(PersistentAuthenticationStateProvider)))));
         }
 
-        public override Task<AuthenticationState> GetAuthenticationStateAsync() => authenticationStateTask;
+        public override Task<AuthenticationState> GetAuthenticationStateAsync() => _authenticationStateTask;
     }
 }

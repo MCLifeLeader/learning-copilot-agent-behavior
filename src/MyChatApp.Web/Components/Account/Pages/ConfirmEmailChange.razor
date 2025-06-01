@@ -13,7 +13,7 @@
 
 <h1>Confirm email change</h1>
 
-<StatusMessage Message="@message" />
+<StatusMessage Message="@message"/>
 
 @code {
     private string? message;
@@ -65,4 +65,5 @@
         await SignInManager.RefreshSignInAsync(user);
         message = "Thank you for confirming your email change.";
     }
+
 }
