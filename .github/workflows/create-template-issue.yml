@@ -1,0 +1,26 @@
+name: Create Template Issues
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create_issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Welcome Issue
+        uses: peter-evans/create-issue@v5
+        with:
+          title: "Welcome to your new project!"
+          body: |
+            Thanks for using this template. Here are some recommended next steps:
+            - [ ] Review the README.
+            - [ ] Configure your project settings.
+            - [ ] Set up CI/CD as needed.
+
+            Please complete the following setup tasks:
+            - [ ] Update repository description and topics.
+            - [ ] Add a license if needed.
+            - [ ] Invite collaborators.
+          search-existing: all
