@@ -8,6 +8,7 @@ These instructions define how GitHub Copilot should assist with this project. Th
 - **Language**: C#
 - **Framework / Libraries**: .NET 8+ / ASP.NET Core / Entity Framework Core / nUnit / NSubstitute
 - **Architecture**: Clean Architecture / MVC / Onion
+- Use requirement files found `Docs/requirements.md` to understand the project requirements
 
 ## 🔧 General Guidelines
 

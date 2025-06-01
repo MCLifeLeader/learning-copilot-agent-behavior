@@ -1,3 +1,4 @@
+# This GitHub action workflow creates initial series of issues for running the GitHub Copilot Agent Challenge.
 name: Create Initial Setup Issues
 
 on:
