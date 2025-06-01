@@ -1,12 +1,4 @@
-# Project Setup and Configuration
-
-## About this Project
-
-Sure, here's a description for your README file:
-
----
-
-# MyChatApp
+# Project Setup and Configuration and details about the MyChatApp and Copilot Project
 
 ## Overview
 
