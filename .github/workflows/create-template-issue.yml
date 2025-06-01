@@ -5,12 +5,16 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   create_issues:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.0
       - name: Create Welcome Issue
         uses: peter-evans/create-issue-from-file@v5.0.1
         with:
