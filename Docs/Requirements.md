@@ -65,8 +65,8 @@ Certainly, Michael. Here’s a **detailed requirements list** for a modern chat 
   * Search within chat history.
 * **User Interface Example Images**
 
-[2025-05-31_12-58-09.png](Images/2025-05-31_12-58-09.png)
-[2025-05-31_13-00-12.png](Images/2025-05-31_13-00-12.png)
+[2025-05-31_12-58-09.png](2025-05-31_12-58-09.png)<br />
+[2025-05-31_13-00-12.png](2025-05-31_13-00-12.png)
 
 ### **D. Notifications**
 

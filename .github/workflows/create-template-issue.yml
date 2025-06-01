@@ -1,0 +1,27 @@
+# # This GitHub action workflow creates initial series of issues for running the GitHub Copilot Agent Challenge.
+# name: Create Initial Setup Issues
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# permissions:
+#   contents: read
+#   issues: write
+
+# jobs:
+#   create_issues:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v4.2.0
+#       - name: Create Welcome Issue
+#         uses: peter-evans/create-issue-from-file@v5.0.1
+#         with:
+#           title: "Welcome to your new project!"
+#           content-filepath: .github/ISSUE_TEMPLATE/welcome.md
+#           labels: |
+#             report
+#             automated issue
+#           search-existing: all
