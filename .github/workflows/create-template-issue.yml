@@ -1,4 +1,4 @@
-name: Create Template Issues
+name: Create Initial Setup Issues
 
 on:
   push:
@@ -9,18 +9,13 @@ jobs:
   create_issues:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: Create Welcome Issue
-        uses: peter-evans/create-issue@v5
+        uses: peter-evans/create-issue-from-file@v5.0.1
         with:
           title: "Welcome to your new project!"
-          body: |
-            Thanks for using this template. Here are some recommended next steps:
-            - [ ] Review the README.
-            - [ ] Configure your project settings.
-            - [ ] Set up CI/CD as needed.
-
-            Please complete the following setup tasks:
-            - [ ] Update repository description and topics.
-            - [ ] Add a license if needed.
-            - [ ] Invite collaborators.
-          search-existing: all
+          content-filepath: .github/ISSUE_TEMPLATE/welcome.md
+          labels: |
+            report
+            automated issue
