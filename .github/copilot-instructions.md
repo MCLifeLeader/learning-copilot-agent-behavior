@@ -43,8 +43,13 @@ src/
 - Use Dependency Injection for services and repositories.
 - Use FluentValidation for input validation.
 - Create razor pages with backend resources in Blazor separating HTML, CSS, and C# logic.
+  - HTML should be in `.razor` files.
+  - C# should be in `.razor.cs` files.
+  - CSS should be in `.razor.css` files.
 - Map DTOs to domain models using manual mapping extension classes and methods.
 - Use ILogger<T> for structured logging.
+  - Add logging in the constructor of classes and use it to log important events.
+- Use `IOptions<T>` for configuration settings.
 - For APIs:
   - Use [ApiController], ActionResult<T>, and ProducesResponseType.
   - Handle errors using middleware and Problem Details.
