@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChatApp.Web", "src\MyChat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChatApp.Tests", "src\MyChatApp.Tests\MyChatApp.Tests.csproj", "{B20B6C44-1964-1E20-ACC9-141CC5F03174}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChatApp.Web.Client", "src\MyChatApp.Web.Client\MyChatApp.Web.Client.csproj", "{90B55823-DDF6-4C20-98B0-96C8674B3CF7}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +39,6 @@ Global
 		{B20B6C44-1964-1E20-ACC9-141CC5F03174}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B20B6C44-1964-1E20-ACC9-141CC5F03174}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B20B6C44-1964-1E20-ACC9-141CC5F03174}.Release|Any CPU.Build.0 = Release|Any CPU
-		{90B55823-DDF6-4C20-98B0-96C8674B3CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90B55823-DDF6-4C20-98B0-96C8674B3CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90B55823-DDF6-4C20-98B0-96C8674B3CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90B55823-DDF6-4C20-98B0-96C8674B3CF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

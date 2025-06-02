@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Components.Server;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
-using MyChatApp.Web.Client;
 using MyChatApp.Web.Data;
 using System.Diagnostics;
 using System.Security.Claims;
@@ -91,11 +90,6 @@ namespace MyChatApp.Web.Components.Account
 
                 if (userId != null && email != null)
                 {
-                    _state.PersistAsJson(nameof(UserInfo), new UserInfo
-                    {
-                        UserId = userId,
-                        Email = email,
-                    });
                 }
             }
         }
