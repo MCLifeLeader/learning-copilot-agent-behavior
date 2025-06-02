@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyChatApp.ServiceDefaults\MyChatApp.ServiceDefaults.csproj" />
-    <ProjectReference Include="..\MyChatApp.Web.Client\MyChatApp.Web.Client.csproj" />
   </ItemGroup>
 
   <ItemGroup>
