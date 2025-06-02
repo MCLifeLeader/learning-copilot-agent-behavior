@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
+using MyChatApp.Web.Models;
 using System.Security.Claims;
 
 namespace MyChatApp.Web.Client
