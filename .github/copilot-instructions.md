@@ -48,6 +48,8 @@ src/
   - CSS should be in `.razor.css` files.
 - Map DTOs to domain models using manual mapping extension classes and methods.
 - Use ILogger<T> for structured logging.
+  - Add logging in the constructor of classes and use it to log important events.
+- Use `IOptions<T>` for configuration settings.
 - For APIs:
   - Use [ApiController], ActionResult<T>, and ProducesResponseType.
   - Handle errors using middleware and Problem Details.
