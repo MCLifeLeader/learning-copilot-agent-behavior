@@ -9,11 +9,11 @@
 ## How to run this experiment
 
 1. Clone the repository.
-2. In GitHub add an environment variable named `` to bypass firewall restrictions for the Copilot agent.
+2. In GitHub add an environment variable to bypass firewall restrictions for the Copilot agent.
     - Settings -> Environments -> New environment
     - Name: `copilot`
     - Add Environment variable: `COPILOT_AGENT_FIREWALL_ALLOW_LIST_ADDITIONS` with value `api.cdnjs.com, cdnjs.cloudflare.com, learn.microsoft.com`
-3. If you have an MCP servers add them to Copilot settings:
+3. If you have MCP servers add them to Copilot settings:
     - Settings -> Copilot -> Coding agent
     - Add your MCP servers to the `MCP Servers` list.
 3. Open the project in your IDE.
